@@ -11,12 +11,12 @@
         color: goldenrod;
     }
     .card-body { 
-        width:99%;
+        width:100%;
         background-color: lightgray;
     }
 
     .playerSearch {
-        margin-bottom: 2%;
+        margin-bottom: 0%;
     }
 
     Example
@@ -61,4 +61,46 @@
     .img-thumbnail {
         margin-top: 4%;
         padding: 5px; 
+    }
+
+    .card {
+      padding-left: 7%;
+      height: 25rem;
+    }
+
+    .cardTwo {
+      margin-left: 3%;
+      background-color: lightgray;
+      height: 10rem;
+    }
+
+    .card-header {
+      background-color: navy;
+      color: oldlace;
+      text-align: center;
+    }
+
+    .card-bodyTwo  {
+      margin-top: 2%;
+      margin-left: 2%;
+    }
+
+    .cardThree {
+      margin-left: 3%;
+      background-color: lightgray;
+      height: 14rem;
+    }
+
+    .card-header3 {
+      background-color: goldenrod;
+      color: navy;
+      text-align: center;
+      height: 2rem;
+      padding-top: 1%;
+      font-weight: bold;
+    }
+
+    .card-bodyThree  {
+      margin-top: 2%;
+      margin-left: 2%;
     }
