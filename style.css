@@ -1,0 +1,64 @@
+.jumbotron {
+    background-color: navy;
+    text-align: center;
+    color: oldlace;
+    padding-top: 4pt;
+    padding-bottom: 2pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    } 
+
+    .lead {
+        color: goldenrod;
+    }
+    .card-body { 
+        width:99%;
+        background-color: lightgray;
+    }
+
+    .playerSearch {
+        margin-bottom: 2%;
+    }
+
+    Example
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style the search field */
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 60%;
+      background: #f1f1f1;
+    }
+    
+    /* Style the submit button */
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #2196F3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none; /* Prevent double borders */
+      cursor: pointer;
+    }
+    
+    form.example button:hover {
+      background: #0b7dda;
+    }
+    
+    /* Clear floats */
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .img-thumbnail {
+        margin-top: 4%;
+        padding: 5px; 
+    }
