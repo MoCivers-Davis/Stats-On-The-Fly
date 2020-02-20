@@ -34,8 +34,6 @@ $("#search-form").on("submit", function (event) {
             $("#youtube-display").append(embeddedURL)
             
             
-            
-            
         } //for loop
         
 
