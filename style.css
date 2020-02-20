@@ -61,18 +61,19 @@
     .img-thumbnail {
         margin-top: 9%;
         padding: 5px; 
+        height: 240;
+        width: 296;
     }
 
-    .card {
+    /* .card {
       padding-left: 7%;
       height: 33rem;
-    }
+    } */
 
     .cardTwo {
-      margin-left: 3%;
       background-color: lightgray;
-      height: 18rem;
-      width: 50rem;
+      /* height: 18rem;
+      width: 50rem; */
     }
 
     .card-header {
@@ -83,15 +84,14 @@
     }
 
     .card-bodyTwo  {
-      margin-top: 2%;
-      margin-left: 2%;
+      /* margin-top: 2%;
+      margin-left: 2%; */
     }
 
     .cardThree {
-      margin-left: 3%;
+      /* margin-left: 3%; */
       background-color: lightgray;
-      height: 14rem;
-      width: 50rem;
+      min-height: 14rem;
     }
 
     .card-header3 {
