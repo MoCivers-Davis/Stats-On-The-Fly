@@ -1,4 +1,4 @@
-# Group6 Project
+# Stats on the Fly
 
 ## Project Title
 NBA Sports App
@@ -13,8 +13,9 @@ Each of our group members are huge sports fans and enjoy following sport athelet
 See seperate corespondence 
 
 ## API's Used
-NBA Stats (free API ): https://any-api.com/nba_com/nba_com/docs/API_Description
-Youtube (free API) 
+[Ball Don't Lie API - what we used for the stats](https://www.balldontlie.io/#introduction)
+[Youtube API](https://developers.google.com/youtube/v3)
+[Bing API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/)
 
 ## Group Members
 Chris Lee
