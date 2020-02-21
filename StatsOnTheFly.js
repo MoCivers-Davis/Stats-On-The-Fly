@@ -30,8 +30,10 @@ $("#search-form").on("submit", function (event) {
 
             
             let embeddedURL = $("<iframe>");
-            embeddedURL.attr("src", completedURL)
-            $("#youtube-display").append(embeddedURL)
+            embeddedURL.attr("src", completedURL);
+            embeddedURL.addClass("video");
+            embeddedURL.attr("allowfullscreen", "true")
+            $("#youtube-display").append(embeddedURL);
             
             
         } //for loop
@@ -41,4 +43,6 @@ $("#search-form").on("submit", function (event) {
 
 
 }); //click function
+
+
 
