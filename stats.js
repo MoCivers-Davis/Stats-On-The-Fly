@@ -9,6 +9,7 @@ function searchPlayer() {
     //take search box value and assign it to search term
     let searchTerm = inputValue.value
     var playerQuery = corsHelp + "https://www.balldontlie.io/api/v1/players/?search=" + searchTerm;
+    postImage(searchTerm)
     $.ajax({
         url: playerQuery,
         method: "GET"
@@ -42,7 +43,6 @@ function searchPlayer() {
                     })
                 })
             }
-            postImage(searchTerm)
         })
     })
 }
