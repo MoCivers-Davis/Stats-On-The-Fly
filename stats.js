@@ -48,7 +48,6 @@ function searchPlayer() {
 }
 
 function stats(returnData) {
-    console.log("waiting for moe")
     let responseStatsArray = returnData.data[0]
     let ourStatsArray = [];
     let fillerRow = document.getElementById("fillerRow")
