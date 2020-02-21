@@ -58,9 +58,14 @@ function stats(returnData) {
     ourStatsArray.push(responseStatsArray.stl)
     ourStatsArray.push(responseStatsArray.turnover)
 
+
+    while(fillerRow.firstChild) {
+        fillerRow.removeChild(fillerRow.firstChild)
+    }
+
     for (i = 0; i < ourStatsArray.length; i++) {
         let td = document.createElement("td")
-        td.textContent = ourStatsArray[i]
+        td.textContent = ourStatsArray[i].toFixed(2)
         fillerRow.appendChild(td)
     }
 }
