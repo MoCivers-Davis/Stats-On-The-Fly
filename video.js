@@ -8,7 +8,7 @@ $("#search-form").on("submit", function (event) {
     let apiKey = "AIzaSyDkIGQJd6UBEld0eEES9VOybmaAnp2jtqQ";
     let basketballPlayerInput = $("#input-value").val()
 
-    let queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&q=" + basketballPlayerInput + "&key=" + apiKey;
+    let queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=" + basketballPlayerInput + "&key=" + apiKey;
 
     $.ajax({
         url: queryURL,
@@ -33,8 +33,6 @@ $("#search-form").on("submit", function (event) {
             embeddedURL.attr("src", completedURL);
             embeddedURL.addClass("video");
             $("#youtube-display").append(embeddedURL);
-            
-            
             
             
         } //for loop
