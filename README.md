@@ -1,5 +1,7 @@
 # Stats on the Fly
 
+![Screenshot of website](images/stats-on-the-fly-screenshot.png)
+
 ## Project Title
 NBA Sports App
 
