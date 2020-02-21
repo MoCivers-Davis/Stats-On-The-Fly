@@ -14,38 +14,58 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Stats On The Fly</h1>
-            <p class="lead">Get the latest and greatest stats of your favorite NBA player on demand!</p>
+            <p class="lead">Get Stats...Stat!</p>
         </div>
     </div>
-    <div class="row">
-        <div class="column">
-            <div class="card" style="width: 24rem;">
-                <div class="card-body">
-                    <div class="playerSearch">Player Search:</div>
-                    <form id="search-form">
-                        <input type="text" placeholder="Get Stats.." name="search id" id="input-value" class="playerName">
-                        <button type="submit" class="submitBt" id="submitBt"><i class="fa fa-search"></i></button>
-                    </form>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSDTlOHjFWHX7SiDkYX2AAjsUMf7g02pYMjcllWtg2_fSTGiGSh"
-                        alt="photo of Kobe Bryant" class="img-thumbnail">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="playerSearch">Player Search:</div>
+                        <form id="search-form">
+                            <input type="text" placeholder="Get Stats.." name="search id" id="input-value"
+                                class="playerName">
+                            <button type="submit" class="submitBt" id="submitBt"><i class="fa fa-search"></i></button>
+                        </form>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSDTlOHjFWHX7SiDkYX2AAjsUMf7g02pYMjcllWtg2_fSTGiGSh"
+                            alt="photo of Kobe Bryant" class="img-thumbnail">
+                    </div>
                 </div>
             </div>
-    </div>
+            <div class="col-lg-8">
+                <div class="cardTwo border-dark mb-3">
+                    <div class="card-header">Statistics:</div>
+                    <div class="card-bodyTwo text-dark">
+                        <h5 class="card-title" id="statsHeader">Track Player Stats</h5>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">Points</th>
+                                <th scope="col">Rebounds</th>
+                                <th scope="col">Assists</th>
+                                <th scope="col">Steals</th>
+                                <th scope="col">TurnOvers</th>
 
-        <div class="column2">
-            <div class="cardTwo border-dark mb-3" style="max-width: 43rem;">
-                <div class="card-header">Statistics:</div>
-                <div class="card-bodyTwo text-dark">
-                    <h5 class="card-title">Player's Name</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr id="fillerRow"><!--populated with  -->
+                                
+                            </tr>
+        
+                            </tbody>
+                        </table>
+                        
+        
+
                     </div>
-            </div>
-            <div class="cardThree border-dark mb-3" style="max-width: 43rem;" id="youtube-display">
-                <div class="card-header3">Highlight Videos:</div>
-                <div class="card-bodyThree text-dark">
-                    <h5 class="card-title3">Video Place Holder</h5>
-                    <p class="card-text">Create a div to place videos into .</p>
+                </div>
+                <div class="cardThree border-dark mb-3">
+                    <div class="card-header3">Highlight Videos:</div>
+                    <div class="card-bodyThree text-dark">
+                        <h5 class="card-title3" id="youtube-display">Video</h5>
+                    </div>
                 </div>
             </div>
         </div>

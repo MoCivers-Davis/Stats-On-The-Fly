@@ -5,7 +5,7 @@ var submitBtn = document.getElementById("submitBt")
 var inputValue = document.getElementById("input-value")
 submitBtn.addEventListener("click", searchPlayer)
 // var searchTerm; also made into a let inside of search player @lookIntoIt
-
+var statsHeader = document.getElementById("statsHeader")
 //search player function
 function searchPlayer() {
     //take search box value and assign it to search term
@@ -17,7 +17,10 @@ function searchPlayer() {
     }).then((playerDetails) => {
         //assign the fetched player id to player id
         let playerID = playerDetails.data[0].id
-        
+        let firstName = playerDetails.data[0].first_name
+        let lastName = playerDetails.data[0].last_name
+        statsHeader.textContent = "Track Player Stats | " + firstName + " " + lastName
+
         $.ajax({
             url: corsHelp + "https://www.balldontlie.io/api/v1/season_averages/?player_ids[]=" + playerID,
             method: "GET"
