@@ -9,6 +9,7 @@ function searchPlayer() {
     //take search box value and assign it to search term
     let searchTerm = inputValue.value
     var playerQuery = corsHelp + "https://www.balldontlie.io/api/v1/players/?search=" + searchTerm;
+    postImage(searchTerm)
     $.ajax({
         url: playerQuery,
         method: "GET"
@@ -42,13 +43,11 @@ function searchPlayer() {
                     })
                 })
             }
-            postImage(searchTerm)
         })
     })
 }
 
 function stats(returnData) {
-    console.log("waiting for moe")
     let responseStatsArray = returnData.data[0]
     let ourStatsArray = [];
     let fillerRow = document.getElementById("fillerRow")
@@ -57,6 +56,11 @@ function stats(returnData) {
     ourStatsArray.push(responseStatsArray.ast)
     ourStatsArray.push(responseStatsArray.stl)
     ourStatsArray.push(responseStatsArray.turnover)
+
+
+    while(fillerRow.firstChild) {
+        fillerRow.removeChild(fillerRow.firstChild)
+    }
 
     for (i = 0; i < ourStatsArray.length; i++) {
         let td = document.createElement("td")
