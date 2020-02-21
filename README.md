@@ -1,5 +1,7 @@
 # Stats on the Fly
 
+![Screenshot of website](images/stats-on-the-fly-screenshot.png)
+
 ## Project Title
 NBA Sports App
 
@@ -14,7 +16,9 @@ See seperate corespondence
 
 ## API's Used
 [Ball Don't Lie API - what we used for the stats](https://www.balldontlie.io/#introduction)
+
 [Youtube API](https://developers.google.com/youtube/v3)
+
 [Bing API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/)
 
 ## Group Members
