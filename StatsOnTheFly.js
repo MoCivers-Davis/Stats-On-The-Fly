@@ -32,6 +32,7 @@ $("#search-form").on("submit", function (event) {
             let embeddedURL = $("<iframe>");
             embeddedURL.attr("src", completedURL);
             embeddedURL.addClass("video");
+            embeddedURL.attr("allowfullscreen", "true")
             $("#youtube-display").append(embeddedURL);
             
             
@@ -42,4 +43,6 @@ $("#search-form").on("submit", function (event) {
 
 
 }); //click function
+
+
 

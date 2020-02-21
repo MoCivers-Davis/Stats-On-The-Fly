@@ -107,3 +107,15 @@
       margin-top: 2%;
       margin-left: 2%;
     }
+
+    .video:hover {
+      box-shadow: 0 0 10px 10px white;
+    }
+
+    /* .box {
+      position: relative;
+    }
+
+    .text {
+      position: absolute;
+    } */
