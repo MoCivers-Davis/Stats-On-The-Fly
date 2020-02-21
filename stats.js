@@ -1,15 +1,24 @@
-var jawn = "https://www.balldontlie.io/api/v1/stats"
+var searchTerm;
 const corsHelp = "https://cors-anywhere.herokuapp.com/"
 var submitBtn = document.getElementById("submitBt")
 var inputValue = document.getElementById("input-value")
 submitBtn.addEventListener("click", searchPlayer)
 var statsHeader = document.getElementById("statsHeader")
 //search player function
+
+searchPlayer();
+
 function searchPlayer() {
+    if(searchTerm == null){
+        console.log("null")
+        searchTerm = "kobe bryant"
+    } else {
+        searchTerm = inputValue.value
+        postImage(searchTerm)
+    }
     //take search box value and assign it to search term
-    let searchTerm = inputValue.value
+    // let searchTerm = inputValue.value
     var playerQuery = corsHelp + "https://www.balldontlie.io/api/v1/players/?search=" + searchTerm;
-    postImage(searchTerm)
     $.ajax({
         url: playerQuery,
         method: "GET"
