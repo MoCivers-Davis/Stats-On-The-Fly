@@ -60,7 +60,7 @@ function stats(returnData) {
 
     for (i = 0; i < ourStatsArray.length; i++) {
         let td = document.createElement("td")
-        td.textContent = ourStatsArray[i]
+        td.textContent = ourStatsArray[i].toFixed(2)
         fillerRow.appendChild(td)
     }
 }
