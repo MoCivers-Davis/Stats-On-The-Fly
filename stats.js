@@ -1,10 +1,8 @@
 var jawn = "https://www.balldontlie.io/api/v1/stats"
-// var playerID; made a let inside of search player @lookIntoIt
 const corsHelp = "https://cors-anywhere.herokuapp.com/"
 var submitBtn = document.getElementById("submitBt")
 var inputValue = document.getElementById("input-value")
 submitBtn.addEventListener("click", searchPlayer)
-// var searchTerm; also made into a let inside of search player @lookIntoIt
 var statsHeader = document.getElementById("statsHeader")
 //search player function
 function searchPlayer() {
@@ -46,37 +44,8 @@ function searchPlayer() {
             }
             postImage(searchTerm)
         })
-        //stuff above is a restructured version of what is bellow, top is faster if the player is currently playing, should be 
-        //about the same if the player is retired, @lookIntoIt
-        //     $.ajax({
-        //         url: corsHelp + "https://www.balldontlie.io/api/v1/stats/?player_ids[]=" + playerID,
-        //         method: "GET"
-        //     }).then((gamePool) => {
-        //         //from the pool of fetched games, get the date of the first one
-        //         let date = gamePool.data[0].game.date
-        //         //take the year from that date (first 4)
-        //         let year = date.substring(0, 4)
-        //         $.ajax({
-        //             url: corsHelp + "https://www.balldontlie.io/api/v1/season_averages/?player_ids[]=" + playerID,
-        //             method: "GET"
-        //         }).then((currentSeasonAverage) => {
-        //             //if the player did not record stats in the current year then we will go for whatever year the stats previously were recorded
-        //             if (currentSeasonAverage.data.length == 0) {
-        //                 $.ajax({
-        //                     url: corsHelp + "https://www.balldontlie.io/api/v1/season_averages/?season=" + year + "&player_ids[]=" + playerID,
-        //                     method: "GET"
-        //                 }).then((pastSeasonAverage) => {
-        //                     stats(pastSeasonAverage)
-        //                 })
-        //             } else {
-        //                 stats(currentSeasonAverage)
-        //             }
-        //             postImage(searchTerm)
-        //         })
-        //     })
     })
 }
-
 
 function stats(returnData) {
     console.log("waiting for moe")
