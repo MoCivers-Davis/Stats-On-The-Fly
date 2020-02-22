@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-         <h1 class="display-4">Stats On The Fly</h1>
+            <h1 class="display-4">Stats On The Fly</h1>
             <p class="lead">Get Stats...Stat!</p>
         </div>
     </div>
@@ -40,39 +42,45 @@
                         <h5 class="card-title" id="statsHeader">Track Player Stats</h5>
                         <table class="table table-bordered">
                             <thead>
-                            <tr>
-                                <th scope="col">Points</th>
-                                <th scope="col">Rebounds</th>
-                                <th scope="col">Assists</th>
-                                <th scope="col">Steals</th>
-                                <th scope="col">TurnOvers</th>
+                                <tr>
+                                    <th scope="col">Points</th>
+                                    <th scope="col">Rebounds</th>
+                                    <th scope="col">Assists</th>
+                                    <th scope="col">Steals</th>
+                                    <th scope="col">TurnOvers</th>
 
-                            </tr>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr id="fillerRow">
-                                    <!--populated via JS-->
+                                    <!--populated with  JS-->
+
                                 </tr>
+
                             </tbody>
                         </table>
-                        
-        
+
+
 
                     </div>
                 </div>
                 <div class="cardThree border-dark mb-3">
                     <div class="card-header3">Highlight Videos:</div>
                     <div class="card-bodyThree text-dark">
-                        <h5 class="card-title3" id="youtube-display">Video</h5>
+                        <h5 class="card-title3" id="youtube-display"><iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/OTTWedyp37o" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></h5>
                     </div>
                 </div>
             </div>
         </div>
 
-        
-        
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="StatsOnTheFly.js"></script>
         <script src="stats.js"></script>
 </body>
+
 </html>

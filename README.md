@@ -1,4 +1,8 @@
-# Stats on the Fly
+ # Stats on the Fly 
+
+[Deployed Site](https://mocivers-davis.github.io/Stats-On-The-Fly/)
+
+[Repo](https://github.com/MoCivers-Davis/Stats-On-The-Fly)
 
 ![Screenshot of website](images/stats-on-the-fly-screenshot.png)
 
@@ -12,7 +16,7 @@ A NBA sports app that allows user to search favorite NBA player.  When searching
 Each of our group members are huge sports fans and enjoy following sport atheletes and their stats 
 
 ## Wireframe
-See seperate corespondence 
+[See seperate corespondence](images/wire-frame.jpg)
 
 ## API's Used
 [Ball Don't Lie API - what we used for the stats](https://www.balldontlie.io/#introduction)
@@ -23,9 +27,12 @@ See seperate corespondence
 
 ## Group Members
 Chris Lee
+
 Antonio Alvarado
+
 Mo Civers-Davis
 
 ## Work Breakdown Structure (WBS)
 UI - Mo Civers-Davis
+
 Data Team - Chris Lee and Antonio Alvarado 
