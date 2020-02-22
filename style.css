@@ -19,6 +19,17 @@
         margin-bottom: 0%;
     }
 
+    .card {
+      text-align: center;
+    }
+
+    .card-bodyThree {
+      text-align: center;
+    } 
+
+    iframe {
+      max-width: 98%;
+    }
     Example
     * {
       box-sizing: border-box;
