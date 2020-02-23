@@ -19,13 +19,9 @@
         margin-bottom: 0%;
     }
 
-    .card {
+    .card, .card-bodyThree {
       text-align: center;
     }
-
-    .card-bodyThree {
-      text-align: center;
-    } 
 
     iframe {
       max-width: 98%;
