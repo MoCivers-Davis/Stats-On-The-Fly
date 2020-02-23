@@ -33,7 +33,7 @@ function searchPlayer() {
         }).then((currentSeasonAverage) => {
             if (currentSeasonAverage.data.length != 0) {
                 let season = currentSeasonAverage.data[0].season
-                statsHeader.textContent = `Track Player Stats | (${season}-${(season + 1)}) | ${firstName} ${lastName}`
+                statsHeader.textContent = `Track Player Stats | ${season}-${(season + 1)} | ${firstName} ${lastName}`
                 stats(currentSeasonAverage)
             } else {
                 $.ajax({
@@ -44,7 +44,7 @@ function searchPlayer() {
                     let date = gamePool.data[0].game.date
                     //take the year from that date (first 4)
                     let year = parseInt(date.substring(0, 4))
-                    statsHeader.textContent = `Track Player Stats | (${year}-${(year + 1)}) | ${firstName} ${lastName}`
+                    statsHeader.textContent = `Track Player Stats | ${year}-${(year + 1)} | ${firstName} ${lastName}`
                     $.ajax({
                         url: corsHelp + "https://www.balldontlie.io/api/v1/season_averages/?season=" + year + "&player_ids[]=" + playerID,
                         method: "GET"
@@ -90,5 +90,6 @@ function postImage(searchTerm) {
         let imgSrc = (response.value[0].thumbnailUrl)
         let img = document.querySelector("img")
         img.setAttribute("src", imgSrc)
+        img.setAttribute("style", "max-height:178.3px;max-width:308px;min-height:178.3px;min-width:308px")
     })
 }
