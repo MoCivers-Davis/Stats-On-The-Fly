@@ -26,11 +26,11 @@ Each of our group members are huge sports fans and enjoy following sport athelet
 [Bing API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/)
 
 ## Group Members
-Chris Lee
+Chris Lee - [Git Hub Page](https://github.com/cil5345)
 
-Antonio Alvarado
+Antonio Alvarado - [Git Hub Page](https://github.com/antonio36alv)
 
-Mo Civers-Davis
+Mo Civers-Davis  - [Git Hub Page](https://github.com/MoCivers-Davis)
 
 ## Work Breakdown Structure (WBS)
 UI - Mo Civers-Davis
