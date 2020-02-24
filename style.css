@@ -8,7 +8,9 @@
     } 
 
     .lead {
-        color: goldenrod;
+        /* color: goldenrod; */
+        color: #000080;
+        font-weight: 750;
     }
     .card-body { 
         width:100%;
@@ -21,6 +23,13 @@
 
     .card, .card-bodyThree {
       text-align: center;
+    }
+
+    #logo-image {
+      color: #000080;
+      background-image: url("images/logo-image.png");
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     iframe {
